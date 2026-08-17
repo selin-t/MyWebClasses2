@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(14, 11, 30);
+    background-image: url(bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color:rgb(64, 192, 228);
+    text-align: center;
+    padding-top: 100px;
+    font-size: 42px;
+    font-weight: 100;
+    text-shadow: 0 0 5px #050956, 
+                0 0 20px rgba(128, 213, 255, 0.5);
+}
+
+.filters{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: rgba(5, 9, 92, 0.566);
+    color: rgba(105, 183, 255, 0.763);
+    width: fit-content;
+    
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 220px;   /* sidebar'ın toplam genişliği - istediğin değere göre ayarla */
+}
+
+input, label{
+    padding: 10px;
+    margin: 5px;
+    height: 25px;
+}
+
+#newTestCase{
+    background-color: rgba(6, 18, 72, 0.697);
+    color: rgba(112, 243, 255, 0.727);
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 25px;
+    padding: 15px;
+    max-width: 90%;
+    width: 600px;
+    margin: 0 auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+
+#newTestCase:hover{
+    box-shadow: 0 0 5px #c8fbffde, 
+                0 0 15px rgba(128, 213, 255, 0.593);
+    background-color: aquamarine;
+    color: #08093d;
+}
+
+#tc_list{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    width: 800px;       /* istediğin genişliğe göre ayarla */
+    max-width: 90%;      /* küçük ekranlarda taşmasın diye */
+    margin: 0 auto;      /* yatayda ortalar */
+    box-shadow: 0 0 15px #08093d, 
+                0 0 25px rgba(128, 213, 255, 0.5);
+}
+
+.tc-list-item:hover {
+    box-shadow: 0 0 10px #80d5ff, 
+                0 0 20px rgba(128, 213, 255, 0.8);
+}
+
+.tc-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    border-left: 20px solid rgba(97, 255, 215, 0.914);
+    padding: 12px 60px;
+    margin-bottom: 12px;
+    background-color: rgba(9, 28, 73, 0.525);
+    color: rgba(125, 194, 255, 0.947);
+    transition: all 0.2s ease;
+}
+
+.sorting{
+    color: rgb(92, 212, 249);
+    padding: 25px;
+}
+
+#sort_by {
+    background-color: rgba(12, 10, 73, 0.864);
+    color: aliceblue;
+    border: 1px solid #80d5ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;   /* tarayıcının varsayılan ok ikonunu kaldırır */
+}
+
+#sort_by:hover {
+    box-shadow: 0 0 8px #80d5ff;
+}
+
+#sort_by option {
+    background-color: rgba(5, 7, 83, 0.755);
+    color: aliceblue;
+}
+
+.containerText{
+    color: rgb(92, 212, 249);
+    padding: 25px;
+}
+
+
+.delete-btn {
+    background-color: transparent;
+    border: 1px solid #030037ea;
+    border-radius: 8px;
+    color: #3ea1edcc;
+    font-size: 16px;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff6b81;
+    color: white;
+    box-shadow: 0 0 10px #ff6b81;
+}

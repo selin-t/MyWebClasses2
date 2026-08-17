@@ -39,6 +39,7 @@ function renderList() {
 
     if (all.length === 0) {
         container.innerHTML = "<p>No test cases were found</p>";
+        container.className = "containerText";
         return;
     }
 

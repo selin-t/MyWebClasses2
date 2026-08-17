@@ -1,32 +1,29 @@
+.headerbox{
+    font-size: 24;
+}
+
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font: size 200px;
+}
+
+
+body{
+    background-color: rgb(14, 11, 30);
+}
+
 .tc-group1 {
-    border: 1px solid #cc9797;
-    border-radius: 8px;
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: fit-content;
     margin-bottom: 16px; /* gruplar arası boşluk */
+    background-color: rgb(96, 84, 135);
+    color: aliceblue;
 }
 
-.tc-group2 {
-    border: 1px solid #cc9797;
-    border-radius: 8px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: fit-content;
-    margin-bottom: 16px; /* gruplar arası boşluk */
-}
-
-.tc-group3 {
-    border: 1px solid #cc9797;
-    border-radius: 8px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    width: fit-content;
-    margin-bottom: 16px; /* gruplar arası boşluk */
-}

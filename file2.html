@@ -14,31 +14,38 @@
 
 <body>
 
-    <label for="tc_header"></label>
-    <h2><input id="tc_header" placeholder="Enter the header" /></h2>
+    <div class="infobox">
+        <div class="headerbox">
+            <label for="tc_header"></label>
+            <h2><input id="tc_header" placeholder="Enter the header" /></h2>
+        </div>
 
-    <label for="tc_status">Test Case Status: </label>
-        <select id="tc_status">
-            <option value="" disabled selected>NONE</option>
-            <option value="DRAFT">DRAFT</option>
-            <option value="READY">READY</option>
-            <option value="IN PROGRESS">IN PROGRESS</option>
-            <option value="CLOSED">CLOSED</option>
-        </select>
+        <div class="statusbox">
+            <label for="tc_status" >Test Case Status: </label>
+                <select id="tc_status">
+                    <option value="" disabled selected>NONE</option>
+                    <option value="DRAFT">DRAFT</option>
+                    <option value="READY">READY</option>
+                    <option value="IN PROGRESS">IN PROGRESS</option>
+                    <option value="CLOSED">CLOSED</option>
+                </select>
+        </div> 
+    </div>
+    
 
-
-    <label for="tc_pass">Test Case Result: </label>
-        <select id="tc_pass">
-            <option value="NONE" selected>NONE</option>
-            <option value="PASS">PASS</option>
-            <option value="FAIL">FAIL</option>
-        </select>
-
+    
+    
+        <label for="tc_pass" >Test Case Result: </label>
+            <select id="tc_pass">
+                <option value="NONE" selected>NONE</option>
+                <option value="PASS">PASS</option>
+                <option value="FAIL">FAIL</option>
+            </select> 
 
     <h1>Test Details</h1>
  
     
-    <div class="tc-group1">
+    <div class="tc-group1" id="tc-group11">
         <label for="tc_author">Author: </label>
         <input id="tc_author" placeholder="Enter Author Name" />
 
@@ -56,7 +63,7 @@
 
     
 
-    <div class="tc-group2">
+    <div class="tc-group1" id="tc-group12">
         <label for="tc_severity">Severity: </label>
         <select id="tc_severity">
             <option value="" disabled selected>None</option>
