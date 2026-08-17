@@ -2,7 +2,10 @@
 
 <html>
 
-<script src="script1.js"></script>
+<head>
+    <script src="common.js" defer></script>
+    <script src="script1.js" defer></script>
+</head>
 
 <body>
 
@@ -37,6 +40,12 @@
             <option value="DATE_old_to_new">DATE (old to new)</option>
         </select>
 
+        <br><br>
+
+<div id="tc_list"></div>
+
+<br><br>
+<button id="newTestCase" onclick="createNewTestCase()">Create New Test Case</button>
 
 </body>
 
