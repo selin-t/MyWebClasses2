@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="design2.css">
+
+</head>
+
+
+<body>
+
+    <label for="tc_header"></label>
+    <h2><input id="tc_header" placeholder="Enter the header" /></h2>
+
+    <label for="tc_status">Test Case Status: </label>
+        <select id="tc_status">
+            <option value="" disabled selected>NONE</option>
+            <option value="DRAFT">DRAFT</option>
+            <option value="READY">READY</option>
+            <option value="IN PROGRESS">IN PROGRESS</option>
+            <option value="CLOSED">CLOSED</option>
+        </select>
+
+
+    <label for="tc_pass">Test Case Result: </label>
+        <select id="tc_pass">
+            <option value="NONE" selected>NONE</option>
+            <option value="PASS">PASS</option>
+            <option value="FAIL">FAIL</option>
+        </select>
+
+
+    <h1>Test Details</h1>
+ 
+    
+    <div class="tc-group1">
+        <label for="tc_author">Author: </label>
+        <input id="tc_author" placeholder="Enter Author Name" />
+
+        <label for="tc_id">Test Case ID: </label>
+        <input id="tc_id" placeholder="Enter ID" />
+
+        <label for="tc_type">Test Type: </label>
+        <input id="tc_type" placeholder="Enter Test Type" />
+
+        <p id="tc_date">Date: </p>
+        <script>
+        document.getElementById("tc_date").innerHTML = "Date: " + new Date().toLocaleDateString("tr-TR");
+        </script>
+    </div>
+
+    
+
+    <div class="tc-group2">
+        <label for="tc_severity">Severity: </label>
+        <select id="tc_severity">
+            <option value="" disabled selected>None</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="tc_priority">Priority: </label>
+        <select id="tc_priority">
+            <option value="" disabled selected>None</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="tc_reproducibility">Reproducibility: </label>
+        <select id="tc_reproducibility">
+            <option value="" disabled selected>None</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Always">Always</option>
+        </select>
+
+        <label for="tc_directed_to">Directed to: </label>
+        <input id="tc_directed_to" placeholder="Enter Direction" />    
+    </div>
+    
+
+    <br><br><br>
+
+    <div class="tc-group3">
+        <label for="tc_description">Description </label>
+        <textarea id="tc_description" placeholder="Describe the test case" rows="6"></textarea>
+
+        <label for="tc_objective">Objective </label>
+        <textarea id="tc_objective" placeholder="Explain the test objective" rows="6"></textarea>
+
+        <label for="tc_environment_information">Environment Info </label>
+        <textarea id="tc_environment_information" placeholder="OS, Device, App, User" rows="6"></textarea>
+    </div>
+    
+
+    <label for="tc_pre_conditions">Pre-Conditions </label>
+    <textarea id="tc_pre_conditions" placeholder="Enter Pre-Conditions" rows="6"></textarea>
+
+
+
+    <h1>Test Steps and Conclusion</h1>
+    
+    <label for="tc_steps">Test Steps</label>
+    <textarea id="tc_steps" placeholder="List test steps in order" rows="6"></textarea>
+
+    <br><br>
+
+    <div class="tc-group3">
+        <label for="tc_expected">Expected Outcome </label>
+        <textarea id="tc_expected" placeholder="Describe the expected outcome" rows="6"></textarea>
+
+        <label for="tc_actual">Actual Outcome </label>
+        <textarea id="tc_actual" placeholder="Describe the actual outcome" rows="6"></textarea>
+
+        <label for="tc_bugs">Encountered Bugs </label>
+        <textarea id="tc_bugs" placeholder="List encountered bugs if there are any" rows="6"></textarea>
+    </div>
+    
+
+    <label for="tc_links">Related Links </label>
+    <textarea id="tc_links" placeholder="Enter the Google Drive URLs of images and other related links" rows="6"></textarea>
+
+
+
+    <br><br>
+
+    <label for="tc_notes">Notes </label>
+    <textarea id="tc_notes" placeholder="Write down your notes" rows="6"></textarea>
+    <button id = "help" onclick="help_TestSteps_Conclusion()">?</button>
+
+    <br><br>
+
+
+    <button id = "save" onclick="saveData()">Save Changes</button>
+    <button id = "print" onclick="window.print()">Print Test Case</button>
+    <button id = "reset" onclick="resetForm()">Reset Form</button>
+
+</body>
+
+</html>
+

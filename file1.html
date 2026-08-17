@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<script src="script1.js"></script>
+
+<body>
+
+<h1>Test Case Manager</h1>
+
+
+<form>
+  <input type="radio" id="filter_all" name="filter_option" value="ALL">
+  <label for="filter_all">ALL</label><br>
+  <input type="radio" id="filter_draft" name="filter_option" value="DRAFT">
+  <label for="filter_draft">DRAFT</label><br>
+  <input type="radio" id="filter_ready" name="filter_option" value="READY">
+  <label for="filter_ready">READY</label><br>
+
+  <input type="radio" id="filter_in_progress" name="filter_option" value="IN PROGRESS">
+  <label for="filter_in_progress">IN PROGRESS</label><br>
+  <input type="radio" id="filter_passed" name="filter_option" value="PASSED">
+  <label for="filter_passed">PASSED</label><br>
+  <input type="radio" id="filter_failed" name="filter_option" value="FAILED">
+  <label for="filter_failed">FAILED</label><br>
+
+  <input type="radio" id="filter_closed" name="filter_option" value="CLOSED">
+  <label for="filter_closed">CLOSED</label><br>
+</form> 
+
+<label for="sort_by">Sort By: </label>
+        <select id="sort_by">
+            <option value="NONE" selected>NONE</option>
+            <option value="PRIORITY">PRIORITY</option>
+            <option value="SEVERITY">SEVERITY</option>
+            <option value="DATE_new_to_old">DATE (new to old)</option>
+            <option value="DATE_old_to_new">DATE (old to new)</option>
+        </select>
+
+
+</body>
+
+
+</html>
+

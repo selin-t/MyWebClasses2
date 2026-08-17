@@ -1,0 +1,32 @@
+.tc-group1 {
+    border: 1px solid #cc9797;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+    margin-bottom: 16px; /* gruplar arası boşluk */
+}
+
+.tc-group2 {
+    border: 1px solid #cc9797;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+    margin-bottom: 16px; /* gruplar arası boşluk */
+}
+
+.tc-group3 {
+    border: 1px solid #cc9797;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: fit-content;
+    margin-bottom: 16px; /* gruplar arası boşluk */
+}
