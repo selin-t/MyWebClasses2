@@ -1,29 +1,347 @@
-.headerbox{
-    font-size: 24;
-}
+body{
 
+    background-color: rgb(14, 11, 30);
+    background-image: url(bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    margin: 15px;
+}
 
 h1{
-    color: aliceblue;
+    color:rgb(64, 192, 228);
     text-align: center;
-    font: size 200px;
+    padding-top: 50px;
+    font-size: 42px;
+    font-weight: 100;
+    text-shadow: 0 0 5px #050956, 
+                0 0 20px rgba(128, 213, 255, 0.5);
+    margin-bottom: 50px;
 }
 
-
-body{
-    background-color: rgb(14, 11, 30);
+.infobox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.tc-group1 {
+.headerbox label{
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.headerbox input{
     border: 1px solid #80d5ff;
     border-radius: 10px;
-    padding: 16px;
+    padding: 20px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    box-shadow: 0 0 5px #08093d,
+                0 0 5px rgba(128, 213, 255, 0.5);
+    resize: vertical;
+    width: 400px;
+    box-sizing: border-box;
+    font-family: inherit;  /* inherit the font from body */
+    height: 50px;
+}
+
+.statusbox label{
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+#tc_status{
+    background-color: rgba(5, 21, 59, 0.919);
+    color: aliceblue;
+    border: 1px solid #80d5ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.passBox label{
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+#tc_pass{
+    background-color: rgba(5, 21, 59, 0.919);
+    color: aliceblue;
+    border: 1px solid #80d5ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+}
+
+
+
+.tc-group1{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    width: 400px;      
+    box-shadow: 0 0 5px #08093d, 
+                0 0 5px rgba(128, 213, 255, 0.5);
+    height: 200px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: fit-content;
-    margin-bottom: 16px; /* gruplar arası boşluk */
-    background-color: rgb(96, 84, 135);
-    color: aliceblue;
+    
 }
+
+.tc-group1 label{
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.tc-group1 input{
+    display: flex;
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    border-left: 20px solid rgba(97, 255, 215, 0.914);
+    padding: 5px 80px;
+    margin-bottom: 12px;
+    background-color: rgba(9, 28, 73, 0.525);
+    color: aliceblue;
+    transition: all 0.2s ease;
+}
+
+.tc-group2{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    width: 400px;      
+    box-shadow: 0 0 5px #08093d, 
+                0 0 5px rgba(128, 213, 255, 0.5);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tc-group2 label{
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.tc-group2 select, input{
+    display: flex;
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    border-left: 20px solid rgba(97, 255, 215, 0.914);
+    padding: 3px 80px;
+    margin-bottom: 10px;
+    background-color: rgba(9, 28, 73, 0.525);
+    color: aliceblue;
+    transition: all 0.2s ease;
+}
+
+.mainGroup1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;  
+    padding: 40px;
+}
+
+.tc-group3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;  
+    padding-right: 30px;
+}
+
+.tc-group4{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content; 
+}
+
+.tc-field {
+    display: flex;
+    flex-direction: column;
+    width: 250px;   
+}
+
+.tc-field label {
+    color: aliceblue;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.tc-field textarea {
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    box-shadow: 0 0 5px #08093d,
+                0 0 5px rgba(128, 213, 255, 0.5);
+    resize: vertical;
+    width: 250px;
+    box-sizing: border-box;
+    font-family: inherit;  
+    height: 250px;
+}
+
+.steps, .relatedLinks, .notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.steps label, .relatedLinks label, .notes label {
+    align-self: flex-start; 
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+.steps textarea{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    box-shadow: 0 0 5px #08093d,
+                0 0 5px rgba(128, 213, 255, 0.5);
+    resize: vertical;
+    width: 1000px;
+    box-sizing: border-box;
+    font-family: inherit; 
+    height: 100px;
+}
+
+#steps_display{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+
+.relatedLinks textarea{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    box-shadow: 0 0 5px #08093d,
+                0 0 5px rgba(128, 213, 255, 0.5);
+    resize: vertical;
+    width: 1000px;
+    box-sizing: border-box;
+    font-family: inherit; 
+    height: 100px;
+}
+
+
+.notes textarea{
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(4, 13, 90, 0.388);
+    color: aliceblue;
+    box-shadow: 0 0 5px #08093d,
+                0 0 5px rgba(128, 213, 255, 0.5);
+    resize: vertical;
+    width: 1000px;
+    box-sizing: border-box;
+    font-family: inherit;  
+    height: 100px;
+}
+
+
+
+#save, #print, #reset, #backToManager{
+    background-color: rgba(6, 18, 72, 0.697);
+    color: rgba(112, 243, 255, 0.727);
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 25px;
+    padding: 15px;
+    max-width: 90%;
+    width: 200px;
+    margin: 0 auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+
+#help{
+    color: aliceblue;
+    background-color:#08093d;
+}
+
+#help:hover{
+    background-color: #edd83d;
+    color: rgb(16, 15, 47);
+    box-shadow: 0 0 10px #fffc68;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;  
+}
+
+#save:hover{
+    box-shadow: 0 0 5px #c8fbffde, 
+                0 0 15px rgba(128, 213, 255, 0.593);
+    background-color: aquamarine;
+    color: #08093d;
+}
+
+#print:hover{
+    box-shadow: 0 0 5px #c8fbffde, 
+                0 0 15px rgba(128, 213, 255, 0.593);
+    background-color: aquamarine;
+    color: #08093d;
+}
+
+#reset:hover{
+    background-color: #ff6b81;
+    color: white;
+    box-shadow: 0 0 10px #ff6b81;
+}
+
+#backToManager:hover{
+    background-color: #edd83d;
+    color: rgb(16, 15, 47);
+    box-shadow: 0 0 10px #fffc68;
+}
+
 

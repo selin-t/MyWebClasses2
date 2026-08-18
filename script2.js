@@ -4,7 +4,7 @@ function loadData() {
     document.getElementById("tc_date").innerHTML = "Date: " + new Date().toLocaleDateString("tr-TR");
 
     const currentId = getCurrentTestCaseId();
-    if (!currentId) return; // yeni test case, form boş açılır
+    if (!currentId) return; // new test case, form is empty
 
     const all = getAllTestCases();
     const tc = all.find(item => item.id === currentId);
@@ -15,6 +15,8 @@ function loadData() {
             document.getElementById(id).value = tc[id];
         }
     });
+
+    displayNumberedSteps();
 }
 
 function saveData() {
@@ -34,7 +36,7 @@ function saveData() {
         const index = all.findIndex(tc => tc.id === currentId);
         newData.id = currentId;
         if (index !== -1) {
-            newData.timestamp = all[index].timestamp; // eski oluşturulma zamanını koru
+            newData.timestamp = all[index].timestamp; // keep the old creation timestamp
             all[index] = newData;
         } else {
             all.push(newData);
@@ -72,4 +74,19 @@ function help_TestSteps_Conclusion(){
 
 function goToManager() {
     window.location.href = "file1.html";
+}
+
+function displayNumberedSteps() {
+    const rawText = document.getElementById("tc_steps").value;
+    const lines = rawText.split("\n").filter(line => line.trim() !== "");
+    
+    const ol = document.createElement("ol");
+    lines.forEach(line => {
+        const li = document.createElement("li");
+        li.innerText = line;
+        ol.appendChild(li);
+    });
+    
+    document.getElementById("steps_display").innerHTML = "";
+    document.getElementById("steps_display").appendChild(ol);
 }

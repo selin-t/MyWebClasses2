@@ -58,7 +58,7 @@ function renderList() {
         deleteBtn.innerText = "DELETE";
         deleteBtn.className = "delete-btn";
         deleteBtn.onclick = (event) => {
-            event.stopPropagation(); // tıklama listedeki item'a değil, sadece butona etki etsin
+            event.stopPropagation(); // clicking won't affect the item, only the button
             handleDelete(tc.id);
         };
 
@@ -74,12 +74,12 @@ function handleDelete(id) {
 
     deleteTestCase(id);
 
-    // Eğer silinen kayıt o an "açık" olan kayıtsa, referansı da temizle
+    // if the deleted case is the current open one, clear the form
     if (getCurrentTestCaseId() === id) {
         clearCurrentTestCaseId();
     }
 
-    renderList(); // listeyi yeniden çiz
+    renderList(); // redraw the list
 }
 
 function openTestCase(id) {
