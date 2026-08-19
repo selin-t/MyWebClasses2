@@ -20,6 +20,7 @@ h1{
     margin-bottom: 50px;
 }
 
+
 .infobox {
     display: flex;
     flex-direction: row;
@@ -48,6 +49,7 @@ h1{
     box-sizing: border-box;
     font-family: inherit;  /* inherit the font from body */
     height: 50px;
+    font-size: 18px;
 }
 
 .statusbox label{
@@ -74,6 +76,18 @@ h1{
 }
 
 #tc_pass{
+    background-color: rgba(5, 21, 59, 0.919);
+    color: aliceblue;
+    border: 1px solid #80d5ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+}
+
+option{
     background-color: rgba(5, 21, 59, 0.919);
     color: aliceblue;
     border: 1px solid #80d5ff;
@@ -112,7 +126,8 @@ h1{
     border: 1px solid #80d5ff;
     border-radius: 10px;
     border-left: 20px solid rgba(97, 255, 215, 0.914);
-    padding: 5px 80px;
+    padding: 5px 10px;
+    width: 350px;
     margin-bottom: 12px;
     background-color: rgba(9, 28, 73, 0.525);
     color: aliceblue;
@@ -140,16 +155,29 @@ h1{
     font-size: 14px;
 }
 
-.tc-group2 select, input{
+.tc-group2 select{
     display: flex;
     border: 1px solid #80d5ff;
     border-radius: 10px;
     border-left: 20px solid rgba(97, 255, 215, 0.914);
-    padding: 3px 80px;
+    padding: 3px 10px;
+    width: 390px;
     margin-bottom: 10px;
     background-color: rgba(9, 28, 73, 0.525);
     color: aliceblue;
-    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.tc-group2 input{
+    display: flex;
+    border: 1px solid #80d5ff;
+    border-radius: 10px;
+    border-left: 20px solid rgba(97, 255, 215, 0.914);
+    padding: 3px 10px;
+    width: 350px;
+    margin-bottom: 10px;
+    background-color: rgba(9, 28, 73, 0.525);
+    color: aliceblue;
 }
 
 .mainGroup1 {
@@ -175,6 +203,7 @@ h1{
 }
 
 .tc-group4{
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -182,6 +211,8 @@ h1{
     justify-content: center;
     margin: 0 auto;
     width: fit-content; 
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 .tc-field {
@@ -209,6 +240,7 @@ h1{
     box-sizing: border-box;
     font-family: inherit;  
     height: 250px;
+    font-size: 18px;
 }
 
 .steps, .relatedLinks, .notes {
@@ -242,11 +274,12 @@ h1{
     box-sizing: border-box;
     font-family: inherit; 
     height: 100px;
+    font-size: 18px;
 }
 
 #steps_display{
     color: aliceblue;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -263,8 +296,16 @@ h1{
     box-sizing: border-box;
     font-family: inherit; 
     height: 100px;
+    font-size: 18px;
 }
 
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* içindeki her şeyi sol kenara hizala */
+    margin-bottom: 20px;
+}
 
 .notes textarea{
     border: 1px solid #80d5ff;
@@ -279,7 +320,26 @@ h1{
     box-sizing: border-box;
     font-family: inherit;  
     height: 100px;
+    font-size: 18px;
 }
+
+.notes_help{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#help{
+    color: aliceblue;
+    background-color:#08093d;
+}
+
+#help:hover{
+    background-color: #edd83d;
+    color: rgb(16, 15, 47);
+    box-shadow: 0 0 10px #fffc68;
+}
+
 
 
 
@@ -297,16 +357,6 @@ h1{
     transition: all 0.2s ease;
 }
 
-#help{
-    color: aliceblue;
-    background-color:#08093d;
-}
-
-#help:hover{
-    background-color: #edd83d;
-    color: rgb(16, 15, 47);
-    box-shadow: 0 0 10px #fffc68;
-}
 
 .buttons {
     display: flex;
