@@ -33,6 +33,7 @@ function renderList() {
     } else if (sortBy === "DATE_old_to_new") {
         all.sort((a, b) => a.timestamp - b.timestamp);
     }
+    
 
     const container = document.getElementById("tc_list");
     container.innerHTML = "";
